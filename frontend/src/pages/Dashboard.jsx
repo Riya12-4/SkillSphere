@@ -46,7 +46,7 @@ function Dashboard() {
     try {
       // Step 1: AI identifies the required skill
       const aiResponse = await axios.post(
-        "http://localhost:5000/api/ai/skill-search",
+        "https://skillsphere-backend-58ha.onrender.com/api/ai/skill-search",
         {
           query: searchQuery,
         }
@@ -64,7 +64,7 @@ function Dashboard() {
 
       // Step 2: Search matching providers
       const providerResponse = await axios.post(
-        "http://localhost:5000/api/providers/search",
+        "https://skillsphere-backend-58ha.onrender.com/api/providers/search",
         {
           skill: skill,
         }

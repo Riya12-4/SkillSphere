@@ -96,7 +96,7 @@ if (!token) {
 }
 
 const response = await axios.get(
-  "http://localhost:5000/api/providers/nearby",
+  "https://skillsphere-backend-58ha.onrender.com/api/providers/nearby",
   {
     params: {
       latitude,

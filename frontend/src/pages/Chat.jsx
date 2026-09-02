@@ -65,7 +65,7 @@ function Chat() {
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/messages/${booking._id}`,
+        `https://skillsphere-backend-58ha.onrender.com/api/messages/${booking._id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -146,7 +146,7 @@ function Chat() {
       setErrorMessage("");
 
       const response = await axios.post(
-        "http://localhost:5000/api/messages",
+        "https://skillsphere-backend-58ha.onrender.com/api/messages",
         {
           receiver,
           booking: booking._id,

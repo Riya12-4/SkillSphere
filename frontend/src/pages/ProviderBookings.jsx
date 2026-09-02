@@ -27,7 +27,7 @@ function ProviderBookings() {
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/bookings/provider-bookings",
+        "https://skillsphere-backend-58ha.onrender.com/api/bookings/provider-bookings",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -66,7 +66,7 @@ function ProviderBookings() {
       setMessage("");
 
       const response = await axios.put(
-        `http://localhost:5000/api/bookings/${bookingId}/status`,
+        `https://skillsphere-backend-58ha.onrender.com/api/bookings/${bookingId}/status`,
         {
           status,
         },

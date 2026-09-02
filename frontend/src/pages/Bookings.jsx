@@ -32,7 +32,7 @@ function Bookings() {
 
   try {
     const response = await axios.get(
-      "http://localhost:5000/api/bookings/my-bookings",
+      "https://skillsphere-backend-58ha.onrender.com/api/bookings/my-bookings",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -54,7 +54,7 @@ function Bookings() {
 
         try {
           const reviewResponse = await axios.get(
-            `http://localhost:5000/api/reviews/provider/${booking.provider._id}`
+            `https://skillsphere-backend-58ha.onrender.com/api/reviews/provider/${booking.provider._id}`
           );
 
           if (reviewResponse.data.success) {
@@ -123,7 +123,7 @@ function Bookings() {
       }));
 
       const response = await axios.post(
-        "http://localhost:5000/api/reviews",
+        "https://skillsphere-backend-58ha.onrender.com/api/reviews",
         {
           bookingId,
           rating,
@@ -184,7 +184,7 @@ function Bookings() {
 
       // Create Razorpay order
       const response = await axios.post(
-        "http://localhost:5000/api/payments/create-order",
+        "https://skillsphere-backend-58ha.onrender.com/api/payments/create-order",
         {
           bookingId: booking._id,
         },
@@ -235,7 +235,7 @@ function Bookings() {
           try {
             const verifyResponse =
               await axios.post(
-                "http://localhost:5000/api/payments/verify",
+                "https://skillsphere-backend-58ha.onrender.com/api/payments/verify",
                 {
                   bookingId: booking._id,
                   razorpay_order_id:

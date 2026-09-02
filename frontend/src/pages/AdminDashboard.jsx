@@ -47,7 +47,7 @@ function AdminDashboard() {
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/admin/dashboard",
+        "https://skillsphere-backend-58ha.onrender.com/api/admin/dashboard",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -78,7 +78,7 @@ function AdminDashboard() {
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/admin/providers",
+        "https://skillsphere-backend-58ha.onrender.com/api/admin/providers",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -102,7 +102,7 @@ function AdminDashboard() {
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/admin/customers",
+        "https://skillsphere-backend-58ha.onrender.com/api/admin/customers",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -126,7 +126,7 @@ function AdminDashboard() {
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/admin/bookings",
+        "https://skillsphere-backend-58ha.onrender.com/api/admin/bookings",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -150,7 +150,7 @@ const fetchReviews = async () => {
 
   try {
     const response = await axios.get(
-      "http://localhost:5000/api/admin/reviews",
+      "https://skillsphere-backend-58ha.onrender.com/api/admin/reviews",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -177,7 +177,7 @@ const fetchReviews = async () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/admin/providers/${providerId}/verify`,
+        `https://skillsphere-backend-58ha.onrender.com/api/admin/providers/${providerId}/verify`,
         {},
         {
           headers: {
@@ -207,7 +207,7 @@ const fetchReviews = async () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/admin/customers/${customerId}/status`,
+        `https://skillsphere-backend-58ha.onrender.com/api/admin/customers/${customerId}/status`,
         {},
         {
           headers: {
@@ -803,7 +803,7 @@ const ReviewsSection = () => {
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/admin/reviews",
+        "https://skillsphere-backend-58ha.onrender.com/api/admin/reviews",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -839,7 +839,7 @@ const ReviewsSection = () => {
 
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/admin/reviews/${reviewId}`,
+        `https://skillsphere-backend-58ha.onrender.com/api/admin/reviews/${reviewId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

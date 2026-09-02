@@ -61,7 +61,7 @@ function ProviderProfile() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/bookings",
+        "https://skillsphere-backend-58ha.onrender.com/api/bookings",
         {
           providerId: provider.user?._id,
           service:

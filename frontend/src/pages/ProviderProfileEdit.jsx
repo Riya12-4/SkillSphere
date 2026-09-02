@@ -44,7 +44,7 @@ function ProviderProfileEdit() {
         }
 
         const response = await axios.get(
-          "http://localhost:5000/api/providers/profile",
+          "https://skillsphere-backend-58ha.onrender.com/api/providers/profile",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -168,7 +168,7 @@ const handleGetLocation = () => {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        "http://localhost:5000/api/providers/profile",
+        "https://skillsphere-backend-58ha.onrender.com/api/providers/profile",
         {
           skills: formData.skills
             .split(",")
@@ -250,7 +250,7 @@ const handleGetLocation = () => {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:5000/api/providers/portfolio",
+        "https://skillsphere-backend-58ha.onrender.com/api/providers/portfolio",
         portfolioData,
         {
           headers: {
@@ -305,7 +305,7 @@ const handleGetLocation = () => {
       const token = localStorage.getItem("token");
 
       const response = await axios.delete(
-        `http://localhost:5000/api/providers/portfolio/${portfolioId}`,
+        `https://skillsphere-backend-58ha.onrender.com/api/providers/portfolio/${portfolioId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

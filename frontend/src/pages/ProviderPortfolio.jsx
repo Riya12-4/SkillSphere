@@ -36,7 +36,7 @@ function ProviderPortfolio() {
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/portfolio/my-portfolio",
+        "https://skillsphere-backend-58ha.onrender.com/api/portfolio/my-portfolio",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -92,7 +92,7 @@ function ProviderPortfolio() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/portfolio",
+        "https://skillsphere-backend-58ha.onrender.com/api/portfolio",
         {
           title,
           description,
@@ -152,7 +152,7 @@ function ProviderPortfolio() {
 
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/portfolio/${portfolioId}`,
+        `https://skillsphere-backend-58ha.onrender.com/api/portfolio/${portfolioId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
